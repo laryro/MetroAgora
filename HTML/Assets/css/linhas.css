@@ -1,0 +1,48 @@
+
+.linhas .atencao {
+	color: orange;
+}
+.linhas .normal {
+	color: green;
+}
+.linhas .ruim {
+	color: red;
+}
+
+.linhas li+ li {
+	margin-top: 10px;
+}
+
+.linhas small {
+	margin-left: 5px;
+}
+
+.linha-1-azul {
+	background-color: blue;
+	color: #fff;
+}
+
+.linhas {
+	padding-left: 0;
+	list-style: none;
+	padding-top: 10px;
+}
+.linhas .btn {
+	text-shadow: none;
+	border-width: 0 0 0 5px;
+	font-weight: bold;
+	box-shadow: 1px 1px 4px rgba(0,0,0,.15);
+	border-radius: 3px;
+}
+.btn-linha-1-azul,
+.btn-linha-1-azul:focus {
+	background: #fff;
+	color: #000566;
+	border-color: #000566;
+}
+
+.btn-linha-1-azul:hover {
+	background: #fff;
+	color: #050C8B;
+	border-color: #050C8B;
+}

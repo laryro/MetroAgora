@@ -73,35 +73,6 @@ h1 {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #016738;
 }
-.linha-1-azul {
-	background-color: blue;
-	color: #fff;
-}
-
-.linhas {
-	padding-left: 0;
-	list-style: none;
-	padding-top: 10px;
-}
-.linhas .btn {
-	text-shadow: none;
-	border-width: 0 0 0 5px;
-	font-weight: bold;
-	box-shadow: 1px 1px 4px rgba(0,0,0,.15);
-	border-radius: 3px;
-}
-.btn-linha-1-azul,
-.btn-linha-1-azul:focus {
-	background: #fff;
-	color: #000566;
-	border-color: #000566;
-}
-
-.btn-linha-1-azul:hover {
-	background: #fff;
-	color: #050C8B;
-	border-color: #050C8B;
-}
 
 h1 small, .h1 small, 
 h2 small, .h2 small, 
@@ -111,4 +82,15 @@ h2 .small, .h2 .small,
 h3 .small, .h3 .small {
 	display: block;
 	font-size: 50%;
+}
+
+
+.atencao {
+	color: orange;
+}
+.normal {
+	color: green;
+}
+.ruim {
+	color: red;
 }
