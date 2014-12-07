@@ -1,0 +1,215 @@
+2014-08-05 05:04:09 ===========================
+
+
+    create table [Answer] (
+        ID INT IDENTITY NOT NULL,
+       SurveyMeasurement_ID INT null,
+       Employee_ID INT not null,
+       Campaign_ID INT not null,
+       SurveyBasicInformation_ID INT not null,
+       SurveyPhysicalActivity_ID INT not null,
+       SurveyNutrition_ID INT not null,
+       SurveyStressAndMentalHealth_ID INT not null,
+       SurveyAlcoholAndTobacco_ID INT not null,
+       SurveyKnowledgeAndAttitudes_ID INT not null,
+       SurveyMedicalHistory_ID INT not null,
+       SurveyBiometricts_ID INT not null,
+       SurveyBehavioralChange_ID INT not null,
+       primary key (ID)
+    )
+
+    create table [Campaign] (
+        ID INT IDENTITY NOT NULL,
+       Begin_ DATETIME not null,
+       End_ DATETIME not null,
+       Enterprise_ID INT not null,
+       primary key (ID)
+    )
+
+    create table [Employee] (
+        ID INT IDENTITY NOT NULL,
+       Name VARCHAR(255) not null,
+       Address VARCHAR(255) not null,
+       Phone VARCHAR(255) not null,
+       Email VARCHAR(255) not null,
+       Status tinyint not null,
+       Person_ID INT not null,
+       Enterprise_ID INT not null,
+       primary key (ID)
+    )
+
+    create table [Enterprise] (
+        ID INT IDENTITY NOT NULL,
+       Name VARCHAR(255) not null,
+       Address VARCHAR(255) not null,
+       Phone VARCHAR(255) not null,
+       primary key (ID)
+    )
+
+    create table [Person] (
+        ID INT IDENTITY NOT NULL,
+       Document VARCHAR(255) not null,
+       User_ID INT not null,
+       primary key (ID)
+    )
+
+    create table [SurveyAlcoholAndTobacco] (
+        ID INT IDENTITY NOT NULL,
+       Begin_ DATETIME not null,
+       End_ DATETIME not null,
+       primary key (ID)
+    )
+
+    create table [SurveyBasicInformation] (
+        ID INT IDENTITY NOT NULL,
+       Begin_ DATETIME not null,
+       End_ DATETIME not null,
+       primary key (ID)
+    )
+
+    create table [SurveyBehavioralChange] (
+        ID INT IDENTITY NOT NULL,
+       Begin_ DATETIME not null,
+       End_ DATETIME not null,
+       primary key (ID)
+    )
+
+    create table [SurveyBiometricts] (
+        ID INT IDENTITY NOT NULL,
+       Begin_ DATETIME not null,
+       End_ DATETIME not null,
+       primary key (ID)
+    )
+
+    create table [SurveyKnowledgeAndAttitudes] (
+        ID INT IDENTITY NOT NULL,
+       Begin_ DATETIME not null,
+       End_ DATETIME not null,
+       primary key (ID)
+    )
+
+    create table [SurveyMeasurement] (
+        ID INT IDENTITY NOT NULL,
+       Begin_ DATETIME not null,
+       End_ DATETIME not null,
+       primary key (ID)
+    )
+
+    create table [SurveyMedicalHistory] (
+        ID INT IDENTITY NOT NULL,
+       Begin_ DATETIME not null,
+       End_ DATETIME not null,
+       primary key (ID)
+    )
+
+    create table [SurveyNutrition] (
+        ID INT IDENTITY NOT NULL,
+       Begin_ DATETIME not null,
+       End_ DATETIME not null,
+       primary key (ID)
+    )
+
+    create table [SurveyPhysicalActivity] (
+        ID INT IDENTITY NOT NULL,
+       Begin_ DATETIME not null,
+       End_ DATETIME not null,
+       primary key (ID)
+    )
+
+    create table [SurveyStressAndMentalHealth] (
+        ID INT IDENTITY NOT NULL,
+       Begin_ DATETIME not null,
+       End_ DATETIME not null,
+       primary key (ID)
+    )
+
+    create table [User] (
+        ID INT IDENTITY NOT NULL,
+       Ticket VARCHAR(255) null,
+       PasswordRecover UNIQUEIDENTIFIER null,
+       Username VARCHAR(255) not null,
+       Password VARCHAR(255) not null,
+       Status tinyint not null,
+       UserRole tinyint not null,
+       primary key (ID)
+    )
+
+    alter table [Answer] 
+        add constraint FK_Answer_SurveyMeasurement 
+        foreign key (SurveyMeasurement_ID) 
+        references [SurveyMeasurement]
+
+    alter table [Answer] 
+        add constraint FK_Answer_Employee 
+        foreign key (Employee_ID) 
+        references [Employee]
+
+    alter table [Answer] 
+        add constraint FK_Answer_Campaign 
+        foreign key (Campaign_ID) 
+        references [Campaign]
+
+    alter table [Answer] 
+        add constraint FK_Answer_SurveyBasicInformation 
+        foreign key (SurveyBasicInformation_ID) 
+        references [SurveyBasicInformation]
+
+    alter table [Answer] 
+        add constraint FK_Answer_SurveyPhysicalActivity 
+        foreign key (SurveyPhysicalActivity_ID) 
+        references [SurveyPhysicalActivity]
+
+    alter table [Answer] 
+        add constraint FK_Answer_SurveyNutrition 
+        foreign key (SurveyNutrition_ID) 
+        references [SurveyNutrition]
+
+    alter table [Answer] 
+        add constraint FK_Answer_SurveyStressAndMentalHealth 
+        foreign key (SurveyStressAndMentalHealth_ID) 
+        references [SurveyStressAndMentalHealth]
+
+    alter table [Answer] 
+        add constraint FK_Answer_SurveyAlcoholAndTobacco 
+        foreign key (SurveyAlcoholAndTobacco_ID) 
+        references [SurveyAlcoholAndTobacco]
+
+    alter table [Answer] 
+        add constraint FK_Answer_SurveyKnowledgeAndAttitudes 
+        foreign key (SurveyKnowledgeAndAttitudes_ID) 
+        references [SurveyKnowledgeAndAttitudes]
+
+    alter table [Answer] 
+        add constraint FK_Answer_SurveyMedicalHistory 
+        foreign key (SurveyMedicalHistory_ID) 
+        references [SurveyMedicalHistory]
+
+    alter table [Answer] 
+        add constraint FK_Answer_SurveyBiometricts 
+        foreign key (SurveyBiometricts_ID) 
+        references [SurveyBiometricts]
+
+    alter table [Answer] 
+        add constraint FK_Answer_SurveyBehavioralChange 
+        foreign key (SurveyBehavioralChange_ID) 
+        references [SurveyBehavioralChange]
+
+    alter table [Campaign] 
+        add constraint FK_Campaign_Enterprise 
+        foreign key (Enterprise_ID) 
+        references [Enterprise]
+
+    alter table [Employee] 
+        add constraint FK_Employee_Person 
+        foreign key (Person_ID) 
+        references [Person]
+
+    alter table [Employee] 
+        add constraint FK_Employee_Enterprise 
+        foreign key (Enterprise_ID) 
+        references [Enterprise]
+
+    alter table [Person] 
+        add constraint FK_Person_User 
+        foreign key (User_ID) 
+        references [User]

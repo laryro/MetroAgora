@@ -1,0 +1,45 @@
+﻿@model UsersLoginModel
+
+@section Style{
+    <link rel="stylesheet" type="text/css" href="~/Assets/Styles/Login/login.css" />
+}
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "mainForm", novalidate = "novalidate" }))
+{
+    if (!ViewData.ModelState.IsValid)
+    {
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="alert alert-danger ">
+                    @Html.ValidationSummary(true)
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row">
+
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3 class="panel-title"><strong>@Common.Login</strong></h3></div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        @Html.ResourceLabelFor(m => m.Username)
+                        @Html.TextBoxFor(m => m.Username, new { @class = "form-control", placeholder = "Digite seu e-mail", type = "email" })
+                        @Html.ValidationMessageFor(m => m.Username)
+                    </div>
+                    <div class="form-group">
+                        @Html.ResourceLabelFor(m => m.Password)
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Digite sua senha", type = "password" })
+                        @Html.ValidationMessageFor(m => m.Password)
+                    </div>
+                    
+                    @Html.ActionLink(Common.ForgotPassword, "ForgotPassword")
+
+                    <button type="submit" class="btn btn-default pull-right" value="@Common.Login"><i class="glyphicon glyphicon-ok"></i> @Common.Login</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

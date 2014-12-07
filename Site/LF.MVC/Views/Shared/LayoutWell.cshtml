@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "Master.cshtml";
+}
+
+
+<div class="well">
+    @RenderBody()
+</div>
+
+@section Script
+{
+    @RenderSection("Script", required: false)
+}
+
+@section Style
+{
+    @RenderSection("Style", required: false)
+}

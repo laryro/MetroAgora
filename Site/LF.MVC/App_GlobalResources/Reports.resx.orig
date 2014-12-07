@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Complete_Section1_BloodPressureDontRemember" xml:space="preserve">
+    <value>Não se lembra</value>
+  </data>
+  <data name="Complete_Section1_BloodPressureHigh" xml:space="preserve">
+    <value>Pressão arterial elevada</value>
+  </data>
+  <data name="Complete_Section1_BloodPressureNeverDid" xml:space="preserve">
+    <value>Nunca aferiu a pressão arterial</value>
+  </data>
+  <data name="Complete_Section1_BloodPressureNormal" xml:space="preserve">
+    <value>Pressão arterial normal ou baixa</value>
+  </data>
+  <data name="Complete_Section1_BMIHigh" xml:space="preserve">
+    <value>Sobrepeso</value>
+  </data>
+  <data name="Complete_Section1_BMILow" xml:space="preserve">
+    <value>Desnutrição</value>
+  </data>
+  <data name="Complete_Section1_BMINormal" xml:space="preserve">
+    <value>Eutrofia (peso normal)</value>
+  </data>
+  <data name="Complete_Section1_BMITooHigh" xml:space="preserve">
+    <value>Obesidade</value>
+  </data>
+  <data name="Complete_Section1_BodyShapeApple" xml:space="preserve">
+    <value>Forma de maçã (parte superior do corpo com maior concentração de gordura)</value>
+  </data>
+  <data name="Complete_Section1_BodyShapeAppleExplanation1" xml:space="preserve">
+    <value>você apresenta mais gordura concentrada na parte superior do corpo (forma de maçã)</value>
+  </data>
+  <data name="Complete_Section1_BodyShapeAppleExplanation2" xml:space="preserve">
+    <value>você apresenta mais gordura concentrada na parte superior do corpo (forma de maçã)</value>
+  </data>
+  <data name="Complete_Section1_BodyShapeBig" xml:space="preserve">
+    <value>Armazenamento de excesso de gordura na região abdominal</value>
+  </data>
+  <data name="Complete_Section1_BodyShapeBigExplanation1" xml:space="preserve">
+    <value>você apresenta excesso de gordura concentrado na parte superior e inferior do corpo</value>
+  </data>
+  <data name="Complete_Section1_BodyShapeBigExplanation2" xml:space="preserve">
+    <value>você apresenta excesso de gordura concentrada na região abdominal</value>
+  </data>
+  <data name="Complete_Section1_BodyShapeLittle" xml:space="preserve">
+    <value>Pequena quantidade de gordura corporal distribuída igualmente</value>
+  </data>
+  <data name="Complete_Section1_BodyShapeLittleExplanation1" xml:space="preserve">
+    <value>você apresenta uma pequena quantidade de gordura distribuída igualmente</value>
+  </data>
+  <data name="Complete_Section1_BodyShapeLittleExplanation2" xml:space="preserve">
+    <value>você apresenta uma pequena quantidade de gordura distribuída igualmente</value>
+  </data>
+  <data name="Complete_Section1_BodyShapePear" xml:space="preserve">
+    <value>Forma de pêra (parte inferior do corpo com maior concentração de gordura)</value>
+  </data>
+  <data name="Complete_Section1_BodyShapePearExplanation1" xml:space="preserve">
+    <value>você apresenta mais gordura concentrada na parte inferior do corpo (forma de pêra)</value>
+  </data>
+  <data name="Complete_Section1_BodyShapePearExplanation2" xml:space="preserve">
+    <value>você apresenta mais gordura concentrada na parte inferior do corpo (forma de pêra)</value>
+  </data>
+  <data name="Complete_Section1_CholesterolBloodPressureRelationDontRemember" xml:space="preserve">
+    <value>Mantenha a pressão arterial em níveis iguais ou inferiores a 130/85.</value>
+  </data>
+  <data name="Complete_Section1_CholesterolBloodPressureRelationHigh" xml:space="preserve">
+    <value>Reduza a pressão arterial alta.</value>
+  </data>
+  <data name="Complete_Section1_CholesterolBloodPressureRelationNeverDid" xml:space="preserve">
+    <value>Mantenha a pressão arterial em níveis iguais ou inferiores a 130/85.</value>
+  </data>
+  <data name="Complete_Section1_CholesterolBloodPressureRelationNormal" xml:space="preserve">
+    <value>Mantenha a pressão arterial em níveis iguais ou inferiores a 130/85.</value>
+  </data>
+  <data name="Complete_Section1_CholesterolDontRemember" xml:space="preserve">
+    <value>Não se lembra</value>
+  </data>
+  <data name="Complete_Section1_CholesterolDontRememberExplanation" xml:space="preserve">
+    <value>Identificamos que neste momento, você não sabe o valor de seu colesterol total. É importante monitorar os níveis de colesterol, especialmente a medida em que se envelhece. Suas chances de desenvolver uma doença coronariana aumentam proporcionalmente em relação aos níveis de colesterol. É possível reduzir o colesterol efetivamente, através de dietas e exercícios. Mais informações sobre colesterol e o que deve ser feito para mantê-lo baixo, estão descritas abaixo.</value>
+  </data>
+  <data name="Complete_Section1_CholesterolHigh" xml:space="preserve">
+    <value>Colesterol Elevado</value>
+  </data>
+  <data name="Complete_Section1_CholesterolHighExplanation" xml:space="preserve">
+    <value>Identificamos que neste momento, seu colesterol foi classificado como alto. Suas chances de desenvolver uma doença cardiovascular aumentam proporcionalmente em relação aos níveis de colesterol. Pode-se fazer muito para reduzir o colesterol, através de dietas e exercícios. Mais informações sobre colesterol e outras sugestões para reduzi-lo estão descritas abaixo.</value>
+  </data>
+  <data name="Complete_Section1_CholesterolNeverDid" xml:space="preserve">
+    <value>Nunca dosou o colesterol</value>
+  </data>
+  <data name="Complete_Section1_CholesterolNeverDidExplanation" xml:space="preserve">
+    <value>Identificamos que neste momento, você não sabe o valor de seu colesterol total. É importante monitorar os níveis de colesterol, especialmente a medida em que se envelhece. Suas chances de desenvolver uma doença coronariana aumentam proporcionalmente em relação aos níveis de colesterol. É possível reduzir o colesterol efetivamente, através de dietas e exercícios. Mais informações sobre colesterol e o que deve ser feito para mantê-lo baixo, estão descritas abaixo.</value>
+  </data>
+  <data name="Complete_Section1_CholesterolNormal" xml:space="preserve">
+    <value>Colesterol normal</value>
+  </data>
+  <data name="Complete_Section1_CholesterolNormalExplanation" xml:space="preserve">
+    <value>Identificamos que neste momento, seu colesterol total foi classificado como normal, indicando que está dentro da faixa desejável, inferior a 200mg/dL. {0} Mais informações sobre colesterol e o que deve ser feito para mantê-lo baixo estão descritas abaixo.</value>
+  </data>
+  <data name="Complete_Section1_CholesterolToldHigh" xml:space="preserve">
+    <value>No entanto, você também informou que já foi previamente diagnosticado com colesterol alto, portanto é importante monitorar seus níveis de colesterol.</value>
+  </data>
+  <data name="Complete_Section1_GlucoseDontRemember" xml:space="preserve">
+    <value>Não se lembra</value>
+  </data>
+  <data name="Complete_Section1_GlucoseHigh" xml:space="preserve">
+    <value>Glicose elevada</value>
+  </data>
+  <data name="Complete_Section1_GlucoseNeverDid" xml:space="preserve">
+    <value>Nunca dosou a o nível de glicose</value>
+  </data>
+  <data name="Complete_Section1_GlucoseNormal" xml:space="preserve">
+    <value>Glicose normal</value>
+  </data>
+  <data name="Complete_Section1_GlucoseDiabetesNo" xml:space="preserve">
+    <value>Considera-se diabetes, casos em que a glicose sanguínea esteja acima de 126 mg/dL. Quando a glicose encontra-se entre 100 mg/dL e 125 mg/dL, chamamos de “tolerância diminuída à glicose” ou “glicemia de jejum alterada”, que é uma condição na qual o nível de glicemia (glicose no sangue) está acima do normal, porém não está elevado o suficiente para diagnosticar um caso de diabetes. Pessoas nesta situação têm chances consideravelmente maiores de desenvolverem diabetes tipo 2. A perda de peso e a prática de exercícios regulares podem prevenir ou retardar a progressão da doença.</value>
+  </data>
+  <data name="Complete_Section1_GlucoseDiabetesYes" xml:space="preserve">
+    <value>Você informou que já foi diagnosticado como diabético. Como você provavelmente já sabe, isso aumenta o risco de doença cardíaca, derrame, doença nos rins, problemas neurológicos e outros danos à saúde. Ainda não existe cura para o diabetes, porém com alimentação saudável, atividade física regular e tratamento médico adequado, é possível controlar a doença.</value>
+  </data>
+  <data name="Complete_Section1_GlucoseDontRememberExplanation" xml:space="preserve">
+    <value>Você parece não se lembrar ou nunca dosou sua glicose sanguínea. É importante monitorar os níveis de glicose, principalmente após os 45 anos de idade.</value>
+  </data>
+  <data name="Complete_Section1_GlucoseHighExplanation" xml:space="preserve">
+    <value>Você informou que a última dosagem de glicose foi alta.</value>
+  </data>
+  <data name="Complete_Section1_GlucoseNeverDidExplanation" xml:space="preserve">
+    <value>Você parece não se lembrar ou nunca mediu o valor de glicose no sangue dosou sua glicose sanguínea. É importante monitorar os níveis de glicose, principalmente após os 40 45 anos de idade.</value>
+  </data>
+  <data name="Complete_Section1_GlucoseNormalExplanation" xml:space="preserve">
+    <value>Você informou que a última dosagem de glicose foi normal.</value>
+  </data>
+  <data name="Complete_Section1_BMIHighExplanation" xml:space="preserve">
+    <value>Identificamos que neste momento, seu IMC é {0}. Este valor indica um risco maior de doenças como diabetes tipo 2 e doenças cardiovasculares. Para compreender adequadamente a proporção entre músculo e gordura no seu corpo converse com seu médico e nutricionista. Perder peso deve ser um objetivo a ser conquistado de modo gradual e permanente. Procure fazer com que este processo seja sustentável.</value>
+  </data>
+  <data name="Complete_Section1_BMILowExplanation" xml:space="preserve">
+    <value>Seu IMC de {0}, neste momento, é considerado abaixo do ideal. Isso não significa necessariamente que a sua saúde está prejudicada, mas pode indicar que talvez seja importante consultar um médico e certificar-se de que está tudo bem com você.</value>
+  </data>
+  <data name="Complete_Section1_BMINormalExplanation" xml:space="preserve">
+    <value>Identificamos que neste momento, seu IMC é {0}. Este valor é considerado normal e reduz o risco de doenças cardiovasculares, diabetes tipo 2, entre outras. Um estilo de vida ativo, um programa de atividade e exercícios físicos regulares e uma dieta saudável poderão ajudar a manter seu peso neste valor ao longo de sua vida.</value>
+  </data>
+  <data name="Complete_Section1_BMITooHighExplanation" xml:space="preserve">
+    <value>Identificamos que neste momento, seu IMC é {0}. Neste valor, o risco de desenvolvimento de algumas doenças aumenta significativamente. Emagrecer pode ajudar muito a melhorar sua saúde. Perder alguns quilos para alcançar um peso mais próximo do ideal deve ser um objetivo permanente. Procure fazer com que este processo seja lento e gradual, de forma que você possa atingir o seu objetivo. Consulte seu médico e nutricionista para que lhe ajudem a iniciar um programa de gerenciamento de peso seguro e eficiente.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_BMIExplanation" xml:space="preserve">
+    <value>O Índice de Massa Corporal (ou IMC) é um indicador que expressa a relação entre o peso e a altura (mais especificamente, IMC = peso em quilogramas dividido pela altura em metros ao quadrado). Segundo a Organização Mundial da Saúde, o IMC ideal é entre {0} e {1}. Um IMC de {2} ou superior é considerado sobrepeso, e um IMC de {3} ou superior é considerado obesidade.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_BMIFatDistribuition" xml:space="preserve">
+    <value>Apesar de o IMC ser um indicador de precisão razoável para avaliar se um indivíduo está acima do peso ou não, o perfil de composição corporal mais completo e preciso leva em consideração o IMC e a porcentagem de gordura corporal. Para uma avaliação mais completa, é interessante que você avalie sua porcentagem de gordura corporal. Procure seu médico e nutricionista e lembre-se que a equipe do CASC está disponível para ajudá-lo.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol1" xml:space="preserve">
+    <value>O colesterol é um tipo de gordura,  essencial para a saúde do ser humano. Ele faz parte da estrutura das células, é encontrado em tecidos corporais e é necessário para a produção de hormônios. Apesar de o corpo precisar de colesterol para funcionar adequadamente, altos níveis de alguns tipos de colesterol e gordura sanguíneos (mais especificamente, LDL e triglicérides) aumentam o risco de desenvolvimento de doença cardiovascular (ex.: infarto e derrame).</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol2" xml:space="preserve">
+    <value>Para entender os níveis de colesterol, deve-se examinar diversas medidas: colesterol total, lipoproteínas de baixa densidade (LDL), lipoproteínas de alta densidade (HDL), a proporção entre o colesterol total e o HDL, e triglicérides.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol3" xml:space="preserve">
+    <value>Colesterol total é a medida de todo o colesterol presente no sangue. Os níveis de colesterol total no sangue de adultos são classificados da seguinte maneira:</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol3_1" xml:space="preserve">
+    <value>desejável - inferior a 200 mg/dL;</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol3_2" xml:space="preserve">
+    <value>limítrofe - 200 a 239 mg/dL; ou</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol3_3" xml:space="preserve">
+    <value>elevado - 240 mg/dL ou superior.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol4" xml:space="preserve">
+    <value>As lipoproteínas de baixa densidade (LDL) são chamadas de colesterol "ruim". Um nível inferior a 130 mg/dL é o desejável. O molécula LDL carrega a maioria do colesterol no sangue e é responsável pelo acúmulo de placas e obstrução de artérias. Logo, quanto maior for o nível de LDL, maior será o risco de desenvolver uma doença cardiovascular.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol5" xml:space="preserve">
+    <value>As lipoproteínas de alta densidade (HDL) são conhecidas como “colesterol bom”. Conforme a molécula HDL se move pela corrente sanguínea, ela carrega o “colesterol ruim” até o fígado, onde este é reciclado ou excretado do corpo, prevenindo o seu acúmulo nas paredes das artérias. Segundo evidências, pessoas com níveis mais altos de HDL teriam menos chances de desenvolver doenças coronarianas.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol6" xml:space="preserve">
+    <value>Para calcular a relação de colesterol, divide-se o colesterol total pelo HDL. Em outras palavras, é a medida do colesterol total comparado com o "colesterol bom". A maioria dos especialistas nesta área acredita que a relação ideal é 4,0 ou menos. De forma geral, para aumentar a relação, deve-se diminuir o colesterol total e/ou aumentar o HDL. Ambos podem ser realizados através de dietas e exercícios.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol7" xml:space="preserve">
+    <value>Triglicérides são formas de gordura encontradas em alimentos, gordura corporal e no sangue. A gordura visível em frangos ou bifes é, na verdade, composta por triglicérides. Se você estiver acima do peso, seu corpo armazenará as calorias extras consumidas na forma de triglicérides. Geralmente, pessoas com altos níveis de triglicérides têm baixos níveis de HDL, ou “colesterol bom”. Esta combinação de triglicérides elevados e HDL baixo está associada ao aumento do risco de doença cardiovascular. Importante: Se os seus triglicérides estiverem acima de 400, a medida de LDL poderá não ser precisa. Consulte seu médico em relação aos seus triglicérides elevados (hipertrigliceridemia).</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol8" xml:space="preserve">
+    <value>Mantenha baixo o nível de colesterol seguindo as recomendações abaixo:</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol8_1" xml:space="preserve">
+    <value>Reduza o consumo de gorduras saturadas e gorduras trans com a diminuição do consumo de carne vermelha, leite e seus derivados que tenham alto teor de gordura, e produtos de panificação processados (como biscoitos e bolos).</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol8_2" xml:space="preserve">
+    <value>Escolha alimentos ricos em carboidratos complexos e fibras, tais como vegetais, frutas e cereais integrais.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol8_3" xml:space="preserve">
+    <value>Se esforce para alcançar e manter um peso corporal saudável. Cada quilograma em excesso de gordura corporal representa um mg/dL de colesterol total a mais no sangue, aproximadamente.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol8_4" xml:space="preserve">
+    <value>Pratique exercícios físicos. Um programa de exercícios regulares é importante para manutenção do peso e pode ajudar a aumentar o HDL (“colesterol bom”).</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol8_5" xml:space="preserve">
+    <value>Gerencie seus níveis de estresse. O estresse aumenta a produção de alguns hormônios que podem alterar a composição química corporal.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol8_6" xml:space="preserve">
+    <value>Não fume. Os ácidos graxos no sangue são alterados pelo tabaco de forma prejudicial. Como consequência, os fumantes têm níveis de colesterol HDL (“colesterol bom”) menores que os de não-fumantes. Se o hábito de fumar for interrompido, é possível que os níveis de HDL voltem ao normal.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Cholesterol8_7" xml:space="preserve">
+    <value>A pressão arterial alta danifica a estrutura das artérias, permitindo que o colesterol se acumule em forma de depósitos de gordura (placas). Para obter mais informações sobre pressão arterial alta (hipertensão), leia o tópico Pressão Arterial.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_FatDistribuition1" xml:space="preserve">
+    <value>A distribuição de gordura corporal refere-se ao modo como a gordura é armazenada em seu corpo. Segundo suas respostas, {0}. A distribuição de gordura pelo corpo é um indicador importante de risco à saúde. Pessoas com o corpo em "forma de maçã" (ou seja, que apresentam excesso de gordura na região abdominal) têm maior risco de doenças cardiovasculares e diabetes do que aqueles em "forma de pêra" (ou seja, que apresentam excesso de gordura nos quadris, nádegas e coxas).</value>
+  </data>
+  <data name="Complete_Section1_FixedText_FatDistribuition2" xml:space="preserve">
+    <value>Sabe-se que a gordura abdominal (também chamada de gordura visceral) libera grandes quantidades de ácidos graxos, aumentando os níveis de triglicérides e diminuindo os níveis do colesterol HDL, ambos indicadores de doenças cardiovasculares. Estes ácidos graxos também interferem na ação da insulina no corpo, aumentando consequentemente o risco de diabetes. Além disso, a região de armazenamento de gordura no corpo é um indicador de diabetes mais eficiente que a simples presença de obesidade.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_FatDistribuition3" xml:space="preserve">
+    <value>Lembre-se que o tabagismo e as dietas-sanfona (ganhos e perdas de peso periódicos) estão associados à redistribuição indesejável de gordura para a região abdominal. A melhor forma de reduzir os depósitos de excesso de gordura na região abdominal é combinar exercícios com dietas com muita fibra e pouca gordura. Desse modo, além de redução nas medidas da circunferência de pernas e coxas, há também uma diminuição na quantidade de gordura armazenada na região abdominal.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Glucose" xml:space="preserve">
+    <value>A glicose é o açúcar simples que o corpo obtém dos alimentos consumidos. A insulina é um hormônio produzido pelo pâncreas que ajuda as células a produzirem energia usando a glicose.  Quando há falta de insulina ou quando o corpo é incapaz de usar a insulina produzida, há um acúmulo de glicose no sangue. Medindo a glicose sanguínea é possível descobrir se o corpo produz e usa insulina de forma eficiente. Isso é importante já que a glicose sanguínea alterada é o principal indicador de diabetes.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Introduction1" xml:space="preserve">
+    <value>Chamamos de biometria, as medidas e dados biológicos utilizados para avaliar sua saúde. Estes dados podem ser indicadores importantes para determinar o risco de desenvolvimento de algumas doenças.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Introduction2" xml:space="preserve">
+    <value>Clique em cada medida para acessar a explicação detalhada ou simplesmente use a barra de rolagem para ler o relatório completo. O estado atual de cada medida está em negrito.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Table_BMI" xml:space="preserve">
+    <value>IMC</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Table_Centimeters" xml:space="preserve">
+    <value>centímetros</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Table_CurrentStatus" xml:space="preserve">
+    <value>Seu Estado Atual</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Table_FatDistribuition" xml:space="preserve">
+    <value>Distribuição de Gordura Corporal</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Table_Height" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Table_Measure" xml:space="preserve">
+    <value>Medida</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Table_Meters" xml:space="preserve">
+    <value>metros</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Table_Weight" xml:space="preserve">
+    <value>Peso</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Table_YourBMI" xml:space="preserve">
+    <value>(Seu IMC é {0})</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Title" xml:space="preserve">
+    <value>Seção I. Suas medidas e o que significam</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Title_BloodPressure" xml:space="preserve">
+    <value>Pressão Arterial</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Title_Cholesterol" xml:space="preserve">
+    <value>Colesterol</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Title_Glucose" xml:space="preserve">
+    <value>Glicose Sanguínea</value>
+  </data>
+  <data name="Complete_Section1_FixedText_Title_WeigthDistribuition" xml:space="preserve">
+    <value>Distribuição de Peso</value>
+  </data>
+  <data name="DateLabel" xml:space="preserve">
+    <value>Avaliação #{0} finalizada em {1}</value>
+  </data>
+  <data name="Label_Danger" xml:space="preserve">
+    <value>Fator de risco</value>
+  </data>
+  <data name="Label_Good" xml:space="preserve">
+    <value>Não é um fator de risco</value>
+  </data>
+  <data name="Label_Title" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="Label_Warning" xml:space="preserve">
+    <value>Fator de risco potencial</value>
+  </data>
+  <data name="Complete_Section1_BloodPressureDontRememberExplanation" xml:space="preserve">
+    <value>Você não sabe qual o nível de sua pressão arterial. É importante aferir a pressão arterial regularmente, para mantê-la dentro dos níveis adequados. Geralmente, a pressão arterial elevada é controlável, porém se não for tratada pode se tornar um fator sério de risco à saúde, podendo causar derrame, doenças cardíacas, danos aos rins, dentre outros. O primeiro passo para controlar a hipertensão arterial é adotar  um estilo de vida mais saudável, como: consumir alimentos saudáveis, diminuir a quantidade de sal, perder o excesso de peso, gerenciar o estresse, praticar atividades e exercícios físicos regularmente, não fumar e limitar o consumo de álcool.</value>
+  </data>
+  <data name="Complete_Section1_BloodPressureHighExplanation" xml:space="preserve">
+    <value>Sua última medida de pressão arterial foi considerada alta. É necessário que você tome as medidas necessárias para baixar a pressão arterial. Geralmente, a pressão arterial elevada é controlável, porém, se não for tratada pode se tornar um fator sério de risco à saúde, podendo causar derrame, doença cardíaca, danos aos rins, dentre outros. As medidas de pressão arterial oscilam bastante, por isso é recomendado que se façam diversas aferições para que se tenha uma média do nível de pressão arterial. O primeiro passo para controlar a hipertensão arterial é adotar um estilo de vida mais saudável, como: consumir alimentos saudáveis, diminuir o uso de sal, perder o excesso de peso, praticar atividade e exercícios físicos regularmente, gerenciar o estresse, não fumar e limitar o consumo de álcool.</value>
+  </data>
+  <data name="Complete_Section1_BloodPressureNeverDidExplanation" xml:space="preserve">
+    <value>Você não sabe qual o nível de sua pressão arterial. É importante aferir a pressão arterial regularmente, para mantê-la dentro dos níveis adequados. Geralmente, a pressão arterial elevada é controlável, porém se não for tratada pode se tornar um fator sério de risco à saúde, podendo causar derrame, doenças cardíacas, danos aos rins, dentre outros. O primeiro passo para controlar a hipertensão arterial é adotar  um estilo de vida mais saudável, como: consumir alimentos saudáveis, diminuir a quantidade de sal, perder o excesso de peso, gerenciar o estresse, praticar atividades e exercícios físicos regularmente, não fumar e limitar o consumo de álcool.</value>
+  </data>
+  <data name="Complete_Section1_BloodPressureNormalExplanation" xml:space="preserve">
+    <value>Você informou que a última aferição de sua pressão arterial foi normal. {0} Para manter a pressão arterial dentro da normalidade, é recomendável praticar atividades e exercícios físicos durante a maioria dos dias da semana, manter um peso corporal adequado, consumir alimentos saudáveis, consumir sal moderadamente, gerenciar o estresse, não fumar e limitar o consumo de álcool.</value>
+  </data>
+  <data name="Complete_Section1_BloodPressureToldHigh" xml:space="preserve">
+    <value>No entanto, também informou que já teve pressão arterial elevada. Logo, é importante monitorar suas escolhas de estilo de vida.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_BloodPressure1" xml:space="preserve">
+    <value>Estima-se que no Brasil, ao menos, uma em cada quatro pessoas sofra de pressão arterial alta (hipertensão). Geralmente não há sinais ou sintomas, por isso a hipertensão é uma doença silenciosa. Sabe-se que a hipertensão aparece com maior frequência em pessoas que tem história familiar da doença, assim como idosos e obesos. Os fatores que aparentam ter relação com a hipertensão são: consumo excessivo de álcool, tabagismo, estresse, estilo de vida sedentário, sensibilidade ao sódio (sal) e o uso de anticoncepcionais orais. No entanto, ainda é impossível prever com certeza quem terá pressão arterial elevada. Por isso, é importante tomar precauções contra a doença e verificar a pressão arterial regularmente em suas consultas médicas periódicas.</value>
+  </data>
+  <data name="Complete_Section1_FixedText_BloodPressure2" xml:space="preserve">
+    <value>As artérias de uma pessoa saudável são musculosas e elásticas, que esticam-se e contraem-se conforme o coração bombeia sangue pelo corpo. A maioria dos casos de hipertensão estão associados ao enrijecimento das paredes arteriais, o que dificulta a passagem do sangue. Quando isso acontece, a pressão arterial aumenta e o coração tem que trabalhar mais, causando desgastes tanto nas artérias quanto no coração, rins e outros orgãos. Uma leitura de pressão arterial inferior a 130/85 é considerada normal e é o desejável. Valores entre, 130-139 de pressão sistólica, e 85-89 de pressão diastólica, são considerados limítrofes, ou pré-hipertensão.</value>
+  </data>
+<<<<<<< HEAD
+  <data name="Complete_Section2_FixedText_Title" xml:space="preserve">
+    <value>Seção II. Seu Estilo de Vida</value>
+  </data>
+  <data name="Complete_Section3_FixedText_Title" xml:space="preserve">
+    <value>Seção III. Seus Fatores de Risco para Doença Cardiovascular</value>
+  </data>
+  <data name="Complete_Section4_FixedText_Title" xml:space="preserve">
+    <value>Seção IV. Seus Fatores de Risco para Diabetes Tipo 2</value>
+  </data>
+  <data name="Complete_Section5_FixedText_Title" xml:space="preserve">
+    <value>Seção V. Disposição para Mudança</value>
+=======
+  <data name="Complete_Section1_YourBMIIs" xml:space="preserve">
+    <value>Seu IMC é</value>
+>>>>>>> 1d74203c3ee0f9a7679a5e4b20fef044c3becb0e
+  </data>
+</root>

@@ -1,0 +1,46 @@
+﻿@using LF.Generics.Cookies
+@model CheckBoxList
+
+<ul class="list-unstyled">
+    @if (Model.Items.Any())
+    {
+        for (var e = 0; e < Model.Items.Count; e++)
+        {
+            var viewData = (Dictionary<String, object>)ViewData["htmlAttributes"];
+            var html = new Dictionary<String, object>();
+
+            if (viewData != null)
+            {
+                foreach (var item in viewData)
+                {
+                    html.Add(item.Key, item.Value);
+                }
+            }
+
+            var token = Token.New();
+            html.Add("id", token);
+
+            if (Model.Items[e].HasTextBox)
+            {
+                html.Add("class", "has-other-which");
+            }
+
+            <li class="checkbox option-container">
+                @Html.HiddenFor(m => m.Items[e].ID)
+                @Html.HiddenFor(m => m.Items[e].Name)
+                @Html.HiddenFor(m => m.Items[e].HasTextBox)
+                
+                <label for="@token">
+                    @Html.CheckBoxFor(m => m.Items[e].Chosen, html)
+                    @Model.Items[e].Name
+                </label>
+
+                @if (Model.Items[e].HasTextBox)
+                {
+                    @Html.TextBoxFor(m => m.Items[e].TextBox)
+                }
+
+            </li>
+        }
+    }
+</ul>

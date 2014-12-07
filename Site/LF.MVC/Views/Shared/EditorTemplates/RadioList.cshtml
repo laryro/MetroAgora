@@ -1,0 +1,78 @@
+﻿@using LF.Generics.Cookies
+@model RadioList
+
+@{
+    var horizontalViewData = (Boolean?)ViewData["horizontal"];
+    var horizontal = horizontalViewData.HasValue && horizontalViewData.Value;
+    var classHorizontal = horizontal ? "list-horizontal" : "";
+}
+<ul class="list-unstyled @classHorizontal">
+    @if (horizontal)
+    {
+        <li class="line-horizontal"></li>
+        for (var e = 0; e < Model.Items.Count; e++)
+        {
+            var viewData = (Dictionary<String, object>)ViewData["htmlAttributes"];
+            var html = new Dictionary<String, object>();
+
+            if (viewData != null)
+            {
+                foreach (var item in viewData)
+                {
+                    html.Add(item.Key, item.Value);
+                }
+            }
+
+            var token = Token.New();
+            html.Add("id", token);
+
+            <li class="radio-horizontal">
+                @Html.RadioButtonFor(m => m.Chosen, Model.Items[e].ID, html)
+                <label for="@token">
+                    @Model.Items[e].Name
+                </label>
+            </li>
+        }
+    }
+    else
+    {
+        for (var e = 0; e < Model.Items.Count; e++)
+        {
+            var viewData = (Dictionary<String, object>)ViewData["htmlAttributes"];
+            var html = new Dictionary<String, object>();
+
+            if (viewData != null)
+            {
+                foreach (var item in viewData)
+                {
+                    html.Add(item.Key, item.Value);
+                }
+            }
+
+            var token = Token.New();
+            html.Add("id", token);
+
+            if (Model.Items[e].HasTextBox)
+            {
+                html.Add("class", "has-other-which");
+            }
+
+            <li class="radio option-container">
+                @Html.HiddenFor(m => m.Items[e].ID)
+                @Html.HiddenFor(m => m.Items[e].Name)
+                @Html.HiddenFor(m => m.Items[e].HasTextBox)
+
+                <label for="@token">
+                    @Html.RadioButtonFor(m => m.Chosen, Model.Items[e].ID, html)
+                    @Model.Items[e].Name
+                </label>
+
+                @if (Model.Items[e].HasTextBox)
+                {
+                    @Html.TextBoxFor(m => m.Items[e].TextBox)
+                }
+            </li>
+        }
+
+    }
+</ul>
