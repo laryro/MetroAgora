@@ -5,6 +5,12 @@
 
 <h2>@Model.Line.Name</h2>
 
-@foreach (var station in Model.Stations) { 
-    @station.Name
-}
+<ul>
+    @foreach (var station in Model.Stations)
+    {
+        <li>
+            <a href="@Url.Action("Index", "Station", new { id = station.ID })">@station.Name</a>
+            
+        </li>
+    }
+</ul>

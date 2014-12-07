@@ -7,7 +7,7 @@ namespace LF.MVC.Controllers
     {
         public ActionResult Index()
         {
-            return View(new HomeModel());
+            return View(new LineModel());
         }
 
     }
