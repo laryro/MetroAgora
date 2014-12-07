@@ -13,6 +13,7 @@ namespace LF.MVC.Models
         public HomeModel()
         {
             Lines = Access.Line.GetAll();
+
         }
 
     }

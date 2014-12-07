@@ -1,5 +1,23 @@
-﻿@{
+﻿@model StationModel
+@{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>@Model.station.Name</h2>
+
+<h5>Linha do tempo</h5>
+@if (Model.occurrences.Count() > 1) {
+    <ul>
+        @foreach(var occurrence in Model.occurrences.OrderByDescending(o => o.Date)){
+            <li>
+                <p>@occurrence.User.Username diz:</p>
+                <p>Motivo: <strong>@occurrence.Category.Name</strong></p>
+                <p>Descrição: @occurrence.Description</p>
+                <p>@occurrence.Date.ToString("dd/MM/yyyy mm:ss")</p>
+            </li>
+        }
+    </ul>
+}
+else { 
+    <strong>Nenhuma reclamação foi registrada para esta estação!</strong>
+}

@@ -1,11 +1,16 @@
-﻿@model HomeModel
+﻿@model LineModel
 @{
     Layout = "../Shared/LayoutWell.cshtml";
 }
 
 <h1>Metrô Agora</h1>
 
-@foreach(var line in Model.Lines)
+@foreach(var line in Model.AllLines)
 {
-    <a href="@Url.Action("Index", "Line")">Linha tal</a>
+    var numeroDeOcorrencias = Model.LineOccurrences.Count();
+    var statusDaLinha = numeroDeOcorrencias < 5? "Normal" : numeroDeOcorrencias < 10? "Com problemas" : "Ruim";  
+    
+    <a href="@Url.Action("Index", "Line")">@line.Name</a>
+    <strong>@statusDaLinha</strong>
+    
 }
