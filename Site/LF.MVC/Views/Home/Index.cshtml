@@ -1,0 +1,11 @@
+﻿@model HomeModel
+@{
+    Layout = "../Shared/LayoutWell.cshtml";
+}
+
+<h1>Metrô Agora</h1>
+
+@foreach(var line in Model.Lines)
+{
+    <a href="@Url.Action("Index", "Line")">Linha tal</a>
+}

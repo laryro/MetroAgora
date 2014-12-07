@@ -1,0 +1,265 @@
+﻿ body {
+    background: #eee url(/Assets/Images/common/content_pattern.jpg) top center;
+    padding-bottom: 35px;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+   min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    padding: 180px 0 0 0;
+    margin: 0 auto -15px;
+}
+
+footer {
+    background-color: #31323a;
+    color: #fff;
+    font-size: 11px;
+    padding: 10px 0;
+    height: 50px;
+    clear: both;
+}
+
+.push {
+    height: 50px;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-default {
+    margin-bottom: 0;
+    background-color: #fff;
+    border: 0;
+    border-top: 5px solid #6aa2bf;
+    border-bottom: 3px solid #005577;
+}
+
+.navbar-default .container {
+    position: relative;
+}
+
+.navbar-default .navbar-brand {
+    height: auto;
+}
+
+.navbar-default .navbar-nav {
+    position: absolute;
+    right: 15px;
+    bottom: 6px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #005577;
+    font-family: Georgia;
+    font-size: 16px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li.active > a {
+    color: #1581AC;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+h4 {
+    font-size: 19px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+.well {
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.table-actions {
+    width: 200px;
+}
+
+.table-action {
+    width: 100px;
+}
+
+.panel-default > .panel-heading {
+    color: #FFF;
+    background-color: #005577;
+    border: none;
+    margin: -1px;
+}
+
+
+.btn-default {
+    background-color: #F0F0F0;
+}
+
+#menu .dropdown-menu > li > a:hover, #menu .dropdown-menu > li > a:focus{
+    color: #17A5C1;
+}
+
+.field-validation-error{
+    color: red;
+}
+
+.surveys-steps {
+    list-style: none;
+    padding: 0;
+}
+.surveys-steps li {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-color: #F8F8F8;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 25px;
+    text-align: center;
+}
+.surveys-steps p{
+    padding: 15px 0;
+}
+.surveys-steps .step-done {
+    background-color: #ccc;
+}
+
+.surveys-steps .step-active {
+    background-color: #3747b7;
+    color: #fff;
+}
+
+.red {
+    color: #900;
+}
+
+.green {
+    color: #075;
+}
+
+.gray{
+    color: #B6B6B6;
+}
+
+.validation-summary-errors{
+}
+
+.validation-summary-errors ul,
+.validation-summary-errors ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.margin_bottom_15{
+    margin-bottom: 15px;
+}
+
+.margin_top_15{
+    margin-top: 15px;
+}
+
+.label-width{
+    width: 110px;
+}
+
+.input-text{
+    width: 43px;
+    text-align: center;
+}
+
+.style-life td, .style-life th{
+    text-align: center;
+}
+
+.list-horizontal {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.radio-horizontal{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    white-space: normal;
+    z-index: 2;
+    position: relative;
+}
+
+.radio-horizontal  li {
+    display: inline-block;
+}
+
+.line-horizontal{
+    border: none;
+    border-top: 1px solid #6A7180;
+    display: block;
+    height: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0;
+    position: relative;
+    top: 10px;
+    z-index: 1;
+}
+
+.radio-horizontal label{
+    display: block;
+    width: 120px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-default .navbar-nav {
+        position: relative;
+        right: auto;
+        bottom: auto;
+    }
+}
+
+.glyphicon-ok-sign {
+    color: #0C0;
+}
+
+.glyphicon-info-sign {
+    color: #CC0;
+}
+
+.glyphicon-remove-sign {
+    color: #C00;
+}

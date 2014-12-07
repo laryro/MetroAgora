@@ -1,0 +1,21 @@
+﻿@model LF.MVC.Helpers.Pagination.PagesModel
+
+<div class="pagination-wrapper" @Html.Raw(Model.Pages == 0 ? "style='display: none;'" : "")>
+	<ul class="pagination">
+        @if (Model.Pages > 0)
+        {
+	        for (var p = 1; p <= Model.Pages; p++)
+	        {
+	            <li class='pagnav pag@(p) @(p == 1 ? "active" : "")' data-position="@p">
+	                <a href="@Model.Url/@p">@p</a>
+	            </li>
+	        }
+        }
+	</ul>
+</div>
+
+<div style="display: none;" id="new-page-link" data-items-per-page="@Model.ItemsPerPage">
+	<li class='pagnav pag[page-number]' data-position="[page-number]">
+	    <a href="@Model.Url/[page-number]">[page-number]</a>
+	</li>
+</div>

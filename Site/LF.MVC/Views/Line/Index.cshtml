@@ -1,0 +1,10 @@
+﻿@model LineModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@Model.Line.Name</h2>
+
+@foreach (var station in Model.Stations) { 
+    @station.Name
+}
