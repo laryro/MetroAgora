@@ -277,6 +277,7 @@
     <Content Include="Views\Station\Create.cshtml" />
     <Content Include="Views\Users\Create.cshtml" />
     <Content Include="Views\Users\CreateSuccess.cshtml" />
+    <Content Include="Views\Station\CreateSuccess.cshtml" />
     <None Include="Web.Win.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
