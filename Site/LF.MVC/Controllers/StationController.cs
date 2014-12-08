@@ -14,6 +14,13 @@ namespace LF.MVC.Controllers
             return View(model);
         }
 
+        public ActionResult AllOccurrences(Int32 id)
+        {
+            var model = new StationModel(id);
+
+            return View(model);
+        }
+
         [LFAuthorize]
         public ActionResult Create(Int32 stationId)
         {

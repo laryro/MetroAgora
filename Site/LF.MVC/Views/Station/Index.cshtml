@@ -29,8 +29,8 @@
     </a>
 </p>
 
-<h2>Ocorrências</h2>
-@if (Model.occurrences.Count() > 0) {
+<h2>Ocorrências nos últimos 20 minutos</h2>
+@if (Model.LastOccurrences.Count() > 0) {
     
     <ul class="list-unstyled timeline">
 
@@ -45,7 +45,24 @@
         }
 
     </ul>
+    if (Model.occurrences.Count() > 0)
+    { 
+        <a href="@Url.Action("AllOccurrences", "Station", new { id = Model.station.ID })" class="btn  btn-primary">
+            <i class="fa fa-search"></i> Ver ocorrências mais antigas
+        </a>
+    }
 }
-else { 
-    <strong>Nenhuma ocorrência foi registrada para esta estação!</strong>
+else
+{
+    if (Model.occurrences.Count() > 0)
+    {
+        <p><strong>Nenhuma ocorrência foi registrada para esta estação nos últimos 20 minutos!</strong></p>
+        <a href="@Url.Action("AllOccurrences", "Station", new { id = Model.station.ID })" class="btn  btn-primary">
+            <i class="fa fa-search"></i> Ver ocorrências mais antigas
+        </a>
+    }
+    else
+    {
+        <p><strong>Nenhuma ocorrência foi registrada para esta estação!</strong></p>
+    }
 }
