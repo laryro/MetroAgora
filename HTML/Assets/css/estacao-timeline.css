@@ -1,0 +1,9 @@
+.timeline li {
+	padding: 5px;
+	background: #F4FFFA;
+	margin-top: 10px;
+}
+
+.timeline li p {
+	margin-bottom: 0;
+}

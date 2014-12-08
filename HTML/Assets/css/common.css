@@ -56,20 +56,47 @@ body {
 }
 
 main {
-	padding: 50px 0;
+	padding: 50px 0 70px 0;
 }
 
 footer {
 	position: fixed;
 	bottom: 0;
+	height: 51px;
 	padding: 10px;
 	box-shadow: 0 -3px 5px rgba(0,0,0,.075);
 	width: 100%;
+	background: #fff;
+	text-align: center;
+	color: #016738;
+	font-size: 10px;
+}
+
+
+footer p {
+	margin: 10px 0 0 0;
+}
+
+footer .btn {
+	font-size: 12px;
+}
+
+footer:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	width: 0;
 }
 
 h1 {
 	font-size: 30px;
 }
+
+h2 {
+	font-size: 25px;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #016738;
 }
@@ -82,15 +109,33 @@ h2 .small, .h2 .small,
 h3 .small, .h3 .small {
 	display: block;
 	font-size: 50%;
+	padding-top: 5px;
 }
 
 
 .atencao {
 	color: orange;
 }
+
 .normal {
 	color: green;
 }
+
 .ruim {
 	color: red;
+}
+
+.btn-default {
+	color: #016738;
+	text-shadow: none;
+}
+
+.btn-primary {
+	background: #016738;
+	color: #fff;
+	text-shadow: none;
+}
+
+.btn-primary:hover {
+	background: #04894C;
 }
