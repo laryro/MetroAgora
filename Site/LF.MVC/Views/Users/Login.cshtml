@@ -31,12 +31,12 @@
     <ul class="list-unstyled">
         <li class="form-group">
             @Html.ResourceLabelFor(m => m.Username)
-            @Html.TextBoxFor(m => m.Username, new { @class = "form-control", type = "email" })
+            @Html.TextBoxFor(m => m.Username, new { @class = "form-control", type = "email", required="" })
             @Html.ValidationMessageFor(m => m.Username)
         </li>
         <li class="form-group">
             @Html.ResourceLabelFor(m => m.Password)
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control", type = "password" })
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", type = "password", required = "" })
             @Html.ValidationMessageFor(m => m.Password)
         </li>
     </ul>

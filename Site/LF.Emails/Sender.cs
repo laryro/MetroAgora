@@ -20,7 +20,7 @@ namespace LF.Emails
             var mailSettings = (SmtpSection)ConfigurationManager.GetSection("system.net/mailSettings/smtp");
 
             if (mailSettings != null && mailSettings.From != null)
-                from = new MailAddress(mailSettings.From, "[Kleenex O Embolsador]");
+                from = new MailAddress(mailSettings.From, "[Metro Agora]");
         }
 
 
