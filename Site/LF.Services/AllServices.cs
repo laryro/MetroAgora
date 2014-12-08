@@ -13,11 +13,13 @@ namespace LF.Services
             var occurence = new BaseRepository<Occurrence>();
             var station = new BaseRepository<Station>();
             var line = new BaseRepository<Line>();
+            var category = new BaseRepository<Category>();
 
             User = new UserService(this, user, login);
             Occurrence = new OccurrenceService(this, occurence);
             Station = new StationService(this, station);
             Line = new LineService(this, line);
+            Category = new CategoryService(this, category);
 
             Current = new Current(User);
         }
@@ -42,5 +44,8 @@ namespace LF.Services
         public StationService Station { get; private set; }
 
         public LineService Line { get; private set; }
+        
+        public CategoryService Category { get; private set; }
+
     }
 }
