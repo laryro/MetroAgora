@@ -268,6 +268,7 @@
     <Content Include="Views\Users\ChangePassword.cshtml" />
     <Content Include="Views\Users\ForgotPassword.cshtml" />
     <Content Include="Views\Users\ForgotPasswordSuccess.cshtml" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\Win.pubxml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\LayoutWell.cshtml" />
