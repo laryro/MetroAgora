@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Metrô Agora</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="Assets/css/bootstrap.css">
+	<link rel="stylesheet" href="Assets/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="Assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Assets/css/common.css">
+	<link rel="stylesheet" href="Assets/css/estacao-timeline.css">
+
+	<!--[if lt IE 9]>
+		<script src="Assets/js/html5shiv.min.js"></script>
+		<script src="Assets/js/respond.min.js"></script>
+	<![endif]-->
+	<script src="Assets/js/jquery.min.js"></script>
+	<script src="Assets/js/bootstrap.min.js"></script>
+	<script src="Assets/js/modernizr-2.6.2.js"></script>
+
+</head>
+<body>
+	<header>
+	
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img alt="Brand" class="img-responsive" src="Assets/img/logo.png">
+					Metrô Agora
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Status da linha</a></li>
+					<li><a href="#">Cadastrar ocorrência</a></li>
+					<li><a href="#">Sair</a></li>
+				</ul>
+				
+			</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header><!-- /header -->
+	
+	<main>
+		<div class="container">
+			<h1>
+				Linha 1 - Azul 
+			</h1>
+			<ul class="linha">
+				<li>
+					<a href="estacao.html">Tucuruvi</a>
+					<small class="ruim"><i class="glyphicon glyphicon-remove-sign"></i> ruim</small>
+				</li>
+				<li>
+					<a href="estacao.html">Parada Inglesa</a>
+					<small class="normal"><i class="glyphicon glyphicon-ok-sign"></i> normal</small>
+				</li>
+				<li>
+					<a href="estacao.html">Jd São Paulo</a>
+					<small class="atencao"><i class="glyphicon glyphicon-info-sign"></i> com problemas</small>
+				</li>
+				<li>
+					<a href="estacao.html">Santana</a>
+					<small class="atencao"><i class="glyphicon glyphicon-info-sign"></i> com problemas</small>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<footer>
+		<a href="#" title="Voltar" class="btn btn-default"><i class="fa fa-chevron-left"></i> Voltar</a>
+	</footer>
+	</body>
+</html>
