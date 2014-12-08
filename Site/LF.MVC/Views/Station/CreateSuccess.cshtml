@@ -3,17 +3,18 @@
 @section Style{
     <link rel="stylesheet" type="text/css" href="~/Assets/Styles/Login/login.css" />
 }
-<div class="row">
 
-    <div class="col-sm-6 col-sm-offset-3">
-        <div class="panel panel-default">
-            <div class="panel-heading"><h3 class="panel-title"><strong>Pronto!</strong></h3></div>
-            <div class="panel-body">
-                <div class="form-group">
-                    Você cadastrou uma ocorrência com sucesso!
-                    <a href="@Url.Action("Index", "Station", new { id = Model.StationId })">Voltar a página de Ocorrências</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="text-center">
+    <h1>
+        Pronto!
+        <small>Ocorrência cadastrada com sucesso</small>
+    </h1>
+
+    <p>
+        <a href="@Url.Action("Index", "Station", new { id = Model.StationId })" class="btn btn-primary">
+            <i class="fa fa-chevron-left"></i>
+            Voltar a página de Ocorrências
+        </a>
+
+    </p>
 </div>
