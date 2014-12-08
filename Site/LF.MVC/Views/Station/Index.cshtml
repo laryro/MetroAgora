@@ -1,4 +1,5 @@
 ﻿@model StationModel
+
 @{
     ViewBag.Title = "Index";
     var qtdOcorrencias = Model.Last20MinutesOccurrences;
@@ -7,6 +8,11 @@
     var classeStatus = statusDaEstacao.ToLower().Replace(" ", "");
 
 }
+
+@section BotaoFooter {
+    <a href="@Url.Action("Index", "Line")" title="Voltar para Linha 1 - Azul" class="pull-left btn btn-default"><i class="fa fa-chevron-left"></i> Linha 1 - Azul</a>
+}
+
 
 @section Style {
 <link href="~/Assets/Styles/estacao-timeline.css" rel="stylesheet" />
@@ -18,7 +24,7 @@
     <small class="@classeStatus"><i class="glyphicon glyphicon-ok-sign"></i> @statusDaEstacao</small>
 </h1>
 <p class="text-right">
-    <a href="@Url.Action("Create", "Station", new { stationId = Model.station.ID })" class="btn  btn-primary">
+    <a href="@Url.Action("Create", "Station", new { stationId = Model.station.ID, nomeLinha = Model.station.Line.Name, nomeEstacao=Model.station.Name })" class="btn  btn-primary">
         <i class="fa fa-pencil"></i> Cadastrar ocorrência
     </a>
 </p>
@@ -41,5 +47,5 @@
     </ul>
 }
 else { 
-    <strong>Nenhuma reclamação foi registrada para esta estação!</strong>
+    <strong>Nenhuma ocorrência foi registrada para esta estação!</strong>
 }

@@ -33,7 +33,7 @@ namespace LF.MVC.Models
                 var categoryItem = new SelectListItem() { Text = categoria.Name, Value = categoria.ID.ToString() };
                 listOfCategory.Add(categoryItem);
             }
-
+            Station = Access.Station.GetById(stationId);
             CategoryList = listOfCategory.AsEnumerable();
         }
 
