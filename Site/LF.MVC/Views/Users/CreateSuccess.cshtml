@@ -1,20 +1,25 @@
 ﻿@model BaseModel
 
-@section Style{
-    <link rel="stylesheet" type="text/css" href="~/Assets/Styles/Login/login.css" />
-}
-<div class="row">
 
-    <div class="col-sm-6 col-sm-offset-3">
-        <div class="panel panel-default">
-            <div class="panel-heading"><h3 class="panel-title"><strong>Pronto!</strong></h3></div>
-            <div class="panel-body">
-                <div class="form-group">
-                    Você se cadastrou com sucesso!
-                    Se logue agora e poderá registrar ocorrências! 
-                    <a href="@Url.Action("Login", "Users")">Login</a>
-                </div>
-            </div>
-        </div>
-    </div>
+@section BotaoFooter {
+    <a href="@Url.Action("Index", "Home")" title="Voltar para Linhas" class="pull-left btn btn-default"><i class="fa fa-chevron-left"></i> Linhas</a>
+}
+
+
+
+<div class="text-center">
+    <h1>
+        Cadastro efetuado com sucesso!
+        <small></small>
+    </h1>
+
+    <p>Guarde bem seus dados de cadastro, pois apenas com eles é que você poderá registrar ocorrências.</p>
+
+    <p>
+        <a href="@Url.Action("Login", "Users")" class="btn btn-primary">
+            <i class="fa fa-user"></i>
+            Ir para a tela de login
+        </a>
+
+    </p>
 </div>
