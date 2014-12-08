@@ -120,6 +120,24 @@ namespace LF.DBManager.NHConfig.UserPassed
 
                     return configurerMsSql2008;
 
+
+                case DBMS.MsSql2012:
+                    var configurerMsSql2012 =
+                        ConnectionString == null
+                        ? MsSqlConfiguration.MsSql2012
+                            .ConnectionString(c => c
+                                .Server(Server)
+                                .Database(DataBase)
+                                .Username(Login)
+                                .Password(Password))
+                        : MsSqlConfiguration.MsSql2012
+                            .ConnectionString(ConnectionString);
+
+                    if (ShowSQL)
+                        configurerMsSql2012 = configurerMsSql2012.ShowSql();
+
+                    return configurerMsSql2012;
+
                 case DBMS.MsSql2005:
                     var configurerMsSql2005 =
                         ConnectionString == null

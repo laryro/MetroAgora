@@ -3,6 +3,12 @@
 @section Style{
     <link rel="stylesheet" type="text/css" href="~/Assets/Styles/Login/login.css" />
 }
+
+<h1>
+    Login
+    <small>Para poder registrar ocorrências você precisa estar logado</small>
+</h1>
+
 @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "mainForm", novalidate = "novalidate" }))
 {
     @Html.HiddenFor(m => m.BackTo)
@@ -18,30 +24,32 @@
         </div>
     }
 
-    <div class="row">
-
-        <div class="col-sm-6 col-sm-offset-3">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h3 class="panel-title"><strong>@Common.Login</strong></h3></div>
-                <div class="panel-body">
-                    <div class="form-group">
-                        @Html.ResourceLabelFor(m => m.Username)
-                        @Html.TextBoxFor(m => m.Username, new { @class = "form-control", placeholder = "Digite seu e-mail", type = "email" })
-                        @Html.ValidationMessageFor(m => m.Username)
-                    </div>
-                    <div class="form-group">
-                        @Html.ResourceLabelFor(m => m.Password)
-                        @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Digite sua senha", type = "password" })
-                        @Html.ValidationMessageFor(m => m.Password)
-                    </div>
-                    
-                    @Html.ActionLink(Common.ForgotPassword, "ForgotPassword")
-
-                    <button type="submit" class="btn btn-default pull-right" value="@Common.Login"><i class="glyphicon glyphicon-ok"></i> @Common.Login</button>
-
-                </div>
-            </div>
-        </div>
+    <ul class="list-unstyled">
+        <li class="form-group">
+            @Html.ResourceLabelFor(m => m.Username)
+            @Html.TextBoxFor(m => m.Username, new { @class = "form-control", type = "email" })
+            @Html.ValidationMessageFor(m => m.Username)
+        </li>
+        <li class="form-group">
+            @Html.ResourceLabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", type = "password" })
+            @Html.ValidationMessageFor(m => m.Password)
+        </li>
+    </ul>
+    <div class="clearfix">
+        <p class="pull-left">
+            @Html.ActionLink(Common.ForgotPassword, "ForgotPassword") ou @Html.ActionLink("Cadastre-se", "Create")
+        </p>
+        <p class="pull-right">
+            <button class='btn btn-primary' type="submit">
+                <i class="fa fa-user"></i>
+                Entrar
+            </button>
+        </p>
     </div>
+    
+
+            
 }
+
 

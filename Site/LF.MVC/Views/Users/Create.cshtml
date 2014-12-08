@@ -3,28 +3,47 @@
     ViewBag.Title = "Create";
 }
 
-<h2>Novo usuário</h2>
+@section Script {
+<script src="~/Assets/Scripts/cadastro.js"></script>
+}
+
+<h1>
+    Cadastro
+    <small>Para poder registrar ocorrências você precisa criar um usuário, preenchendo os campos abaixo</small>
+</h1>
 
 @using (Html.BeginForm())
 {
-    <div class="row">
-        <div class="form-group col-sm-6">
+    <ul class="list-unstyled">
+        <li class="form-group">
             @Html.LabelFor(m => m.Nome)
-            @Html.TextBoxFor(m => m.Nome, new { @class = "form-control" })
-        </div>
-        <div class="form-group col-sm-6">
-            @Html.LabelFor(m => m.Username)
-            @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
-        </div>
-        <div class="form-group col-sm-6">
-            @Html.LabelFor(m => m.Password)
-            @Html.TextBoxFor(m => m.Password, new { @class = "form-control" })
-        </div>
-        <div>
-            <button type="submit" class="btn btn-default pull-right">
-                <i class="glyphicon glyphicon-floppy-disk"></i>
-                Criar
+            @Html.TextBoxFor(m => m.Nome, new { @class = "form-control", required = "" })
+        </li>
+        <li class="form-group ">
+            @Html.LabelFor(m => m.Username, "E-mail")
+            @Html.TextBoxFor(m => m.Username,  new { @class = "form-control", required = "" })
+        </li>
+        <li class="form-group ">
+            @Html.LabelFor(m => m.Password, "Senha")
+            @Html.TextBoxFor(m => m.Password, new { @class = "form-control", type="password", required = "" })
+        </li>
+        <li class="form-group">
+            <label for="confirm_password">Confirme sua senha</label>
+            <input type="password" id="confirm_password" required class="form-control">
+        </li>
+    </ul>
+    <div class="clearfix">
+        <p class="pull-left">
+            @Html.ActionLink("Cadastre-se", "Create")
+        </p>
+        <p class="pull-right">
+            <button class='btn btn-primary' type="submit">
+                <i class="fa  fa-plus-circle"></i>
+                Cadastrar
             </button>
-        </div>
+        </p>
     </div>
+   
 }
+
+

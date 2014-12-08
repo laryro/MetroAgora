@@ -1,0 +1,40 @@
+.linha:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 9px;
+	height: 100%;
+	background-color: #000566;
+	border-radius: 10px;
+}
+
+.linha {
+	color: #000;
+	position: relative;
+	list-style: none;
+
+	padding: 0;
+}
+
+.linha li {
+	padding-left: 14px;
+	position: relative;
+}
+.linha li + li{
+	margin-top: 5px;
+}
+
+.linha li:before {
+	content: '\f111';
+	font-family: "FontAwesome";
+	font-size: 8px;
+	color: #fff;
+	z-index: 1;
+	margin: 0;
+	position: absolute;
+	padding-left: 10px;
+	top: 4px;
+	left: -9px;
+}

@@ -3,18 +3,29 @@
     ViewBag.Title = "Index";
 }
 
-<h2>@Model.Line.Name</h2>
+@section Style {
+    <link href="~/Assets/Styles/linha.css" rel="stylesheet" />
+}
 
-<ul>
+
+<h1>
+    @Model.Line.Name
+    <small>Selecione uma estação para visualizar as ocorrências</small>
+</h1>
+
+<ul class="linha">
     @foreach (var station in Model.StationAndStatus)
     {
         var estacao = station.Key;
         var numeroDeOcorrencias = station.Value;
-        var statusDaEstacao = numeroDeOcorrencias < 5? "Normal" : numeroDeOcorrencias < 10? "Com problemas" : "Ruim";
-         
+        var statusDaEstacao = numeroDeOcorrencias < 5 ? "Normal" : numeroDeOcorrencias < 10 ? "Com problemas" : "Ruim";
+
+        var classeStatus = statusDaEstacao.ToLower().Replace(" ", "");
+
         <li>
             <a href="@Url.Action("Index", "Station", new { id = estacao.ID })">@estacao.Name</a>
-            <strong>@statusDaEstacao</strong>
+            <small class="@classeStatus"><i class="glyphicon glyphicon-remove-sign"></i> @statusDaEstacao</small>
         </li>
+
     }
 </ul>

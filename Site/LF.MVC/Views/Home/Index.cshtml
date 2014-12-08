@@ -1,16 +1,27 @@
 ﻿@model LineModel
 @{
-    Layout = "../Shared/LayoutWell.cshtml";
+    Layout = "../Shared/Master.cshtml";
 }
 
-<h1>Metrô Agora</h1>
-
-@foreach(var line in Model.AllLines)
-{
-    var numeroDeOcorrencias = Model.LineOccurrences.Count();
-    var statusDaLinha = numeroDeOcorrencias < 5? "Normal" : numeroDeOcorrencias < 10? "Com problemas" : "Ruim";  
-    
-    <a href="@Url.Action("Index", "Line")">@line.Name</a>
-    <strong>@statusDaLinha</strong>
-    
+@section Style {
+<link href="~/Assets/Styles/linhas.css" rel="stylesheet" />
 }
+<h1>
+    Status das linhas
+    <small>selecione uma linha para visualizar as estações</small>
+</h1>
+
+<ul class="list-unstyled linhas">
+
+    @foreach (var line in Model.AllLines)
+    {
+        var numeroDeOcorrencias = Model.LineOccurrences.Count();
+        var statusDaLinha = numeroDeOcorrencias < 5 ? "Normal" : numeroDeOcorrencias < 10 ? "Com problemas" : "Ruim";
+        var classeStatus = @statusDaLinha.ToLower().Replace(" ", "");
+
+        <li>
+            <a href="@Url.Action("Index", "Line")" class="btn btn-default btn-linha-1-azul" title="1 - Azul">1 - Azul</a>
+            <small class="@classeStatus"><i class="glyphicon glyphicon-remove-sign"></i> @statusDaLinha</small>
+        </li>
+    }
+</ul>

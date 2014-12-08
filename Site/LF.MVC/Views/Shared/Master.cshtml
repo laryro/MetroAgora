@@ -1,27 +1,28 @@
 ﻿@model BaseModel
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <title>Kleenex</title>
-
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="~/Assets/Images/common/logo.ico" type="image/x-icon" rel="shortcut icon">
 
-    <link rel="stylesheet" href="~/Assets/Components/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/Assets/Styles/common/common.css" />
+    <title>Metrô Agora</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="~/Assets/Styles/bootstrap.css" rel="stylesheet" />
+    <link href="~/Assets/Styles/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Assets/Styles/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Assets/Styles/common.css" rel="stylesheet" />
     @RenderSection("Style", required: false)
 
-    <script type="text/javascript" src="~/Assets/Components/jquery/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="~/Assets/Components/jquery-migrate/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="~/Assets/Components/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="~/Assets/Components/maskedinput/jquery.maskedinput.min.js"></script>
-    <script type="text/javascript" src="~/Assets/Scripts/common/common.js"></script>
-    @RenderSection("Script", required: false)
+    
+    <!--[if lt IE 9]>
+        <script src="~/Assets/Scripts/html5shiv.min.js"></script>
+        <script src="~/Assets/Scripts/respond.min.js"></script>
+    <![endif]-->
 
+    <script src="~/Assets/Scripts/jquery.min.js"></script>
+    <script src="~/Assets/Scripts/bootstrap.min.js"></script>
+    <script src="~/Assets/Scripts/modernizr-2.6.2.js"></script>
 </head>
 
 <body>
@@ -35,7 +36,9 @@
         <div class="push"></div>
     </main>
     <footer>
+        @RenderSection("BotaoFooter", false)
         @Html.Partial("Footer")
     </footer>
+    @RenderSection("Script", required: false)
 </body>
 </html>

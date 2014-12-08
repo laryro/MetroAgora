@@ -13,6 +13,7 @@
         MsSql2005,
         ///<summary></summary>
         MsSql2008,
+        MsSql2012,
         ///<summary></summary>
         MsSql7,
         /// <summary>Doesn't need SERVER property</summary>

@@ -218,28 +218,27 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Components\bootstrap-datepicker\css\datepicker3.css" />
-    <Content Include="Assets\Components\bootstrap-datepicker\js\bootstrap-datepicker.js" />
-    <Content Include="Assets\Components\bootstrap\css\bootstrap-theme.css" />
-    <Content Include="Assets\Components\bootstrap\css\bootstrap-theme.min.css" />
-    <Content Include="Assets\Components\bootstrap\css\bootstrap.css" />
-    <Content Include="Assets\Components\bootstrap\css\bootstrap.min.css" />
-    <Content Include="Assets\Components\bootstrap\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Assets\Components\bootstrap\js\bootstrap.js" />
-    <Content Include="Assets\Components\bootstrap\js\bootstrap.min.js" />
-    <Content Include="Assets\Components\makedmoney\jquery.maskMoney.js" />
-    <Content Include="Assets\Components\maskedinput\jquery.maskedinput.min.js" />
-    <Content Include="Assets\Components\jquery\jquery-1.11.1.min.js" />
-    <Content Include="Assets\Components\jquery-migrate\jquery-migrate-1.2.1.min.js" />
-    <Content Include="Assets\Images\common\content_pattern.jpg" />
-    <Content Include="Assets\Images\common\logo.ico" />
-    <Content Include="Assets\Images\common\logo.png" />
-    <Content Include="Assets\Scripts\common\common.js" />
-    <Content Include="Assets\Scripts\common\datepicker.js" />
-    <Content Include="Assets\Scripts\common\pagination.js" />
-    <Content Include="Assets\Scripts\common\tabs.js" />
-    <Content Include="Assets\Styles\common\common.css" />
-    <Content Include="Assets\Styles\Login\login.css" />
+    <Content Include="Assets\Fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\Images\logo.png" />
+    <Content Include="Assets\Images\logo_texto.png" />
+    <Content Include="Assets\Scripts\bootstrap.js" />
+    <Content Include="Assets\Scripts\bootstrap.min.js" />
+    <Content Include="Assets\Scripts\cadastro.js" />
+    <Content Include="Assets\Scripts\html5shiv.min.js" />
+    <Content Include="Assets\Scripts\jquery.min.js" />
+    <Content Include="Assets\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Assets\Scripts\npm.js" />
+    <Content Include="Assets\Scripts\respond.min.js" />
+    <Content Include="Assets\Styles\bootstrap-theme.css" />
+    <Content Include="Assets\Styles\bootstrap-theme.min.css" />
+    <Content Include="Assets\Styles\bootstrap.css" />
+    <Content Include="Assets\Styles\bootstrap.min.css" />
+    <Content Include="Assets\Styles\common.css" />
+    <Content Include="Assets\Styles\estacao-timeline.css" />
+    <Content Include="Assets\Styles\font-awesome.min.css" />
+    <Content Include="Assets\Styles\linha.css" />
+    <Content Include="Assets\Styles\linhas.css" />
     <Content Include="HTMLs\Email\RecoverPassword.html" />
     <Content Include="HTMLs\Email\NewUser.html" />
     <Content Include="Global.asax" />
@@ -254,10 +253,15 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Components\bootstrap\config.json" />
-    <Content Include="Assets\Components\bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Assets\Components\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Assets\Components\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\Fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\Fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\Fonts\FontAwesome.otf" />
+    <Content Include="Assets\Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Assets\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\Styles\bootstrap-theme.css.map" />
+    <Content Include="Assets\Styles\bootstrap.css.map" />
     <None Include="Properties\PublishProfiles\Homolog.pubxml" />
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
@@ -310,8 +314,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Log\" />
-    <Folder Include="Assets\Fonts\" />
-    <Folder Include="Assets\Images\Generated\" />
     <Folder Include="Views\Shared\DisplayTemplates\" />
   </ItemGroup>
   <ItemGroup>
