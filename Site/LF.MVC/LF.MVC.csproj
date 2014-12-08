@@ -169,6 +169,7 @@
     <Compile Include="Models\UsersForgotPasswordModel.cs" />
     <Compile Include="Helpers\ResourceHelper.cs" />
     <Compile Include="Models\UsersChangePasswordModel.cs" />
+    <Compile Include="Models\UsersCreateModel.cs" />
     <Compile Include="Models\UsersLoginModel.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Helpers\EditorFor\RadioList.cs" />
@@ -273,6 +274,7 @@
     <Content Include="Views\Station\Index.cshtml" />
     <Content Include="Views\Station\CreateOccurrence.cshtml" />
     <Content Include="Views\Station\Create.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
     <None Include="Web.Win.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

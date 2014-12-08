@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using LF.MVC.Models;
 using System;
+using LF.MVC.Authorize;
 
 namespace LF.MVC.Controllers
 {
@@ -13,14 +14,17 @@ namespace LF.MVC.Controllers
             return View(model);
         }
 
-        public ActionResult Create()
+        [LFAuthorize]
+        public ActionResult Create(Int32 stationId)
         {
-            return View( new NewOccurrenceModel());
+            return View( new NewOccurrenceModel(stationId));
         }
 
         [HttpPost]
         public ActionResult Create(NewOccurrenceModel model, Int32 stationId)
         {
+            
+            model.StationId = stationId;
             model.Save();
             return View(new NewOccurrenceModel(stationId));
         }

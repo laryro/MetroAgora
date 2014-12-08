@@ -136,7 +136,15 @@ namespace LF.MVC.Controllers
             return View(new BaseModel());
         }
 
+        public ActionResult Create() {
+            return View(new UsersCreateModel());
+        }
 
-
+        [HttpPost]
+        public ActionResult Create(UsersCreateModel model)
+        {
+            model.Create();
+            return View(new UsersCreateModel());
+        }
     }
 }

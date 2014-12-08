@@ -8,7 +8,7 @@
 <a href="@Url.Action("Create", "Station", new { stationId = Model.station.ID })">Criar nova ocorrencia</a>
 
 <h5>Linha do tempo</h5>
-@if (Model.occurrences.Count() > 1) {
+@if (Model.occurrences.Count() > 0) {
     <ul>
         @foreach(var occurrence in Model.occurrences.OrderByDescending(o => o.Date)){
             <li>
