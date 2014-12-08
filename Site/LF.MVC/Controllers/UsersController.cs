@@ -141,7 +141,12 @@ namespace LF.MVC.Controllers
         public ActionResult Create(UsersCreateModel model)
         {
             model.Create();
-            return View(new UsersCreateModel());
+            return RedirectToAction("CreateSuccess");
+        }
+
+        public ActionResult CreateSuccess()
+        {
+            return View(new BaseModel());
         }
     }
 }
