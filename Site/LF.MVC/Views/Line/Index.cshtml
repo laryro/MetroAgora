@@ -6,11 +6,15 @@
 <h2>@Model.Line.Name</h2>
 
 <ul>
-    @foreach (var station in Model.Stations)
+    @foreach (var station in Model.StationAndStatus)
     {
+        var estacao = station.Key;
+        var numeroDeOcorrencias = station.Value;
+        var statusDaEstacao = numeroDeOcorrencias < 5? "Normal" : numeroDeOcorrencias < 10? "Com problemas" : "Ruim";
+         
         <li>
-            <a href="@Url.Action("Index", "Station", new { id = station.ID })">@station.Name</a>
-            
+            <a href="@Url.Action("Index", "Station", new { id = estacao.ID })">@estacao.Name</a>
+            <strong>@statusDaEstacao</strong>
         </li>
     }
 </ul>

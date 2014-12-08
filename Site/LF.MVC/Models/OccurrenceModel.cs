@@ -13,7 +13,15 @@ namespace LF.MVC.Models
         public OccurrenceModel()
         {
             Occurrences = Access.Occurrence.GetOccurrencesByStation(1);
+            
         }
+
+        
+        //public void Save(){
+        //    Access.Occurrence.Save(newOccurence);
+        //}
+
+        //public Occurrence newOccurence { get; set; }
 
     }
 }

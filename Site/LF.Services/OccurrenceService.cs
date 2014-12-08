@@ -37,15 +37,15 @@ namespace LF.Services
             return StationOccurences;
         }
 
-        //public IList<Occurrence> GetOccurrencesByLine(Line line)
-        //{
-        //    var LineOccurences = occurrenceRepository.NewQuery()
-        //        .FilterSimple(o => o.Station.Line == line)
-        //        .OrderBy(o => o.Date, false)
-        //        .Result;
+        public void Save(Occurrence newOccurrence)
+        {
+            InTransaction(() =>
+            {
+                occurrenceRepository.SaveOrUpdate(newOccurrence);
+            });
+        }
 
-        //    return LineOccurences;
-        //}
+
 
     }
 }

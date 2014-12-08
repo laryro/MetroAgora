@@ -162,6 +162,7 @@
     <Compile Include="Helpers\Models\ImageCategories.cs" />
     <Compile Include="Helpers\Models\LFRangeAttribute.cs" />
     <Compile Include="Models\LineModel.cs" />
+    <Compile Include="Models\NewOccurrenceModel.cs" />
     <Compile Include="Models\StationModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\OccurrenceModel.cs" />
@@ -270,6 +271,8 @@
     <Content Include="Views\Shared\LayoutWell.cshtml" />
     <Content Include="Views\Line\Index.cshtml" />
     <Content Include="Views\Station\Index.cshtml" />
+    <Content Include="Views\Station\CreateOccurrence.cshtml" />
+    <Content Include="Views\Station\Create.cshtml" />
     <None Include="Web.Win.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
