@@ -39,9 +39,6 @@ namespace LF.MVC.Controllers
             if (model.BackTo != null && model.BackTo.Contains(":"))
                 model.BackTo = "";
 
-            if (model.FirstAccess)
-                return RedirectToAction("ChangePassword");
-
             if (String.IsNullOrEmpty(model.BackTo))
                 return RedirectToAction("Index", "Home");
 

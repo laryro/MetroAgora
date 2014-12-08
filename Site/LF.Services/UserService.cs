@@ -109,14 +109,15 @@ namespace LF.Services
 
 
 
-        internal User CreateUserWithinTransaction(String username, String password, UserRole role)
+        internal User CreateUserWithinTransaction(String username, String password, String nome, UserRole role)
         {
             var user = new User
             {
                 Username = username,
                 Password = encrypt(password),
+                Nome = nome,
                 Role = role,
-                Status = UserStatus.FirstAccess,
+                Status = UserStatus.Active,
             };
 
             userRepository.SaveOrUpdate(user);
@@ -134,9 +135,9 @@ namespace LF.Services
             return user;
         }
 
-        public void CreateUser(String username, String password, UserRole role)
+        public void CreateUser(String username, String password, String nome, UserRole role)
         {
-            InTransaction(() => CreateUserWithinTransaction(username, password, role));
+            InTransaction(() => CreateUserWithinTransaction(username, password, nome, role));
         }
 
 
@@ -145,11 +146,6 @@ namespace LF.Services
             InTransaction(() =>
             {
                 user.Password = encrypt(password);
-
-                if (user.Status == UserStatus.FirstAccess)
-                {
-                    user.Status = UserStatus.Active;
-                }
 
                 userRepository.SaveOrUpdate(user);
             });
