@@ -1,20 +1,27 @@
 ﻿@model NewOccurrenceModel
 
-@using (Html.BeginForm()) { 
-    <div class="row">
-        <div class="form-group col-sm-6">
-            @Html.LabelFor(m => m.Description)
-            @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
-        </div>
-        <div class="form-group col-sm-6">
-            @Html.LabelFor(m => m.CategoryId)
-            @Html.DropDownListFor(m => m.CategoryId, Model.CategoryList)
-        </div>
-        <div>
-            <button type="submit" class="btn btn-default pull-right">
-                <i class="glyphicon glyphicon-floppy-disk"></i>
-                Criar
-            </button>
-        </div>
-    </div>
+
+<h1>
+    Cadastrar ocorrência
+    <small>A ocorrência será registrada na estação <strong>@Model.Station.Name</strong> na <strong>Linha 1 - Azul</strong></small>
+</h1>
+
+@using (Html.BeginForm())
+{
+    <ul class="list-unstyled">
+        <li class="form-group">
+            @Html.LabelFor(m => m.CategoryId, "Motivo")
+            @Html.DropDownListFor(m => m.CategoryId, Model.CategoryList, "Selecione um motivo...", new { @class = "form-control", required = "" })
+        </li>
+        <li class="form-group">
+            @Html.LabelFor(m => m.Description, "Descrição")
+            @Html.TextAreaFor(m => m.Description, new {  @class = "form-control", required = ""})
+        </li>
+    </ul>
+    <p class="text-right">
+        <button class='btn btn-primary' type="submit">
+            <i class="fa  fa-send"></i>
+            Cadastrar
+        </button>
+    </p>
 }

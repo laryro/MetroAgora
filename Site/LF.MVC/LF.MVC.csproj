@@ -243,9 +243,7 @@
     <Content Include="HTMLs\Email\NewUser.html" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
-    <Content Include="Views\Shared\EditorTemplates\CheckboxList.cshtml" />
     <Content Include="Views\Shared\Master.cshtml" />
-    <Content Include="Views\Shared\Modals\GenericModal.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Web.config">
@@ -266,7 +264,6 @@
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Shared\Pagination.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\RadioList.cshtml" />
     <Content Include="Views\Users\Login.cshtml" />
     <Content Include="Views\Users\ChangePassword.cshtml" />
     <Content Include="Views\Users\ForgotPassword.cshtml" />
@@ -315,7 +312,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Log\" />
-    <Folder Include="Views\Shared\DisplayTemplates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_GlobalResources\DisplayNames.resx">

@@ -4,7 +4,11 @@
 }
 
 @section Script {
-<script src="~/Assets/Scripts/cadastro.js"></script>
+    <script src="~/Assets/Scripts/cadastro.js"></script>
+}
+
+@section BotaoFooter {
+    <a href="@Url.Action("Index", "Home")" title="Voltar para Linhas" class="pull-left btn btn-default"><i class="fa fa-chevron-left"></i> Linhas</a>
 }
 
 <h1>
@@ -34,7 +38,7 @@
     </ul>
     <div class="clearfix">
         <p class="pull-left">
-            @Html.ActionLink("Cadastre-se", "Create")
+            @Html.ActionLink("Login", "Login")
         </p>
         <p class="pull-right">
             <button class='btn btn-primary' type="submit">

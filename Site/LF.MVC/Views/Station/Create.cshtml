@@ -1,6 +1,12 @@
 ﻿@model NewOccurrenceModel
+
 @{
+    
     ViewBag.Title = "Create";
 }
-
+@section BotaoFooter {
+    <a href="@Url.Action("Index", "Line")" title="Voltar para Linhas" class="pull-left btn btn-default">
+        <i class="fa fa-chevron-left"></i> Linha 1 - Azul: @Model.Station.Name
+    </a>
+}
 @Html.Partial("CreateOccurrence")
