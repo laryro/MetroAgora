@@ -12,7 +12,6 @@ namespace LF.MVC.Models
         public String Controller { get; set; }
 
         public Boolean LoggedIn { get; private set; }
-        public Boolean FirstAccess { get; set; }
 
         public String BackTo { get; set; }
 
@@ -21,9 +20,6 @@ namespace LF.MVC.Models
             var user = Current.Set(Username, Password);
             
             LoggedIn = user != null;
-            
-            FirstAccess = user != null 
-                && user.Status == UserStatus.FirstAccess;
         }
 
         public void Logout()

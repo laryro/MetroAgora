@@ -21,6 +21,8 @@ namespace LF.Entities
 
         public virtual String Username { get; set; }
         public virtual String Password { get; set; }
+        public virtual String Nome { get; set; }
+
         public virtual IList<Login> LoginList { get; set; }
 
         public virtual UserStatus Status { get; set; }

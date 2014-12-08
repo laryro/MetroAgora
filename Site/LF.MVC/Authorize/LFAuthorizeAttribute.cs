@@ -21,22 +21,12 @@ namespace LF.MVC.Authorize
         protected override bool AuthorizeCore(HttpContextBase httpContext)
         {
             return current.IsAuthenticated
-                && current.User.Status != UserStatus.FirstAccess
                 && (Role == 0 || current.IsAuthorized(Role));
         }
 
         private Current current
         {
             get { return AllServices.Access.Current; }
-        }
-
-        private Boolean needChangePassword
-        {
-            get
-            {
-                return current.IsAuthenticated
-                    && current.User.Status == UserStatus.FirstAccess;
-            }
         }
 
         protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
@@ -49,13 +39,12 @@ namespace LF.MVC.Authorize
 
             if (current.IsAuthenticated)
             {
-                filterContext.Result = needChangePassword 
-                    ? new RedirectResult(url.Action("ChangePassword", "Users")) 
-                    : new RedirectResult(url.Action("Index", "Home"));
+                filterContext.Result = new RedirectResult(url.Action("Index", "Home"));
             }
             else
             {
-                filterContext.Result = new RedirectResult(url.Action("Login", "Users"));
+                var cameFrom = HttpContext.Current.Request.Url.PathAndQuery;
+                filterContext.Result = new RedirectResult(url.Action("Login", "Users", new { backTo = cameFrom }));
             }
         }
 

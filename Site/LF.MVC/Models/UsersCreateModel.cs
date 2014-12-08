@@ -7,6 +7,7 @@ namespace LF.MVC.Models
     {
         public String Username { get; set; }
         public String Password { get; set; }
+        public String Nome { get; set; }
 
         public String Action { get; set; }
         public String Controller { get; set; }
@@ -18,7 +19,7 @@ namespace LF.MVC.Models
 
         public void Create()
         {
-            Access.User.CreateUser(Username, Password, new UserRole());
+            Access.User.CreateUser(Username, Password, Nome, new UserRole());
         }
 
     }
