@@ -34,7 +34,7 @@
     
     <ul class="list-unstyled timeline">
 
-        @foreach(var occurrence in Model.LastOccurrences.OrderByDescending(o => o.Date)){
+        @foreach(var occurrence in Model.occurrences.OrderByDescending(o => o.Date)){
 
             <li class="well">
 			    <p class="username"><strong>Enviado por:</strong> @occurrence.User.Username</p>
