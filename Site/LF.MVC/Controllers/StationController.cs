@@ -13,5 +13,17 @@ namespace LF.MVC.Controllers
             return View(model);
         }
 
+        public ActionResult Create()
+        {
+            return View( new NewOccurrenceModel());
+        }
+
+        [HttpPost]
+        public ActionResult Create(NewOccurrenceModel model, Int32 stationId)
+        {
+            model.Save();
+            return View(new NewOccurrenceModel(stationId));
+        }
+
     }
 }
