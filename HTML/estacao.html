@@ -24,63 +24,59 @@
 </head>
 <body>
 	<header>
-	
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/">
-					<img alt="Brand" class="img-responsive" src="Assets/img/logo.png">
-					Metrô Agora
-				</a>
-			</div>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">
+						<img alt="Brand" class="img-responsive" src="Assets/img/logo.png">
+						Metrô Agora
+					</a>
+				</div>
 
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-					<li><a href="#">Status da linha</a></li>
-					<li><a href="#">Cadastrar ocorrência</a></li>
-					<li><a href="#">Sair</a></li>
-				</ul>
-				
-			</div><!-- /.navbar-collapse -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Status da linha</a></li>
+						<li><a href="#">Cadastrar ocorrência</a></li>
+						<li><a href="#">Sair</a></li>
+					</ul>
+					
+				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
 	</header><!-- /header -->
-	
 	<main>
 		<div class="container">
 			<h1>
-				Linha 1 - Azul 
+				Estação Tucuruvi
+				<small>Linha 1 - Azul</small>
+				<small class="normal"><i class="glyphicon glyphicon-ok-sign"></i> normal</small>
 			</h1>
-			<ul class="linha">
-				<li>
-					<a href="estacao.html">Tucuruvi</a>
-					<small class="ruim"><i class="glyphicon glyphicon-remove-sign"></i> ruim</small>
-				</li>
-				<li>
-					<a href="estacao.html">Parada Inglesa</a>
-					<small class="normal"><i class="glyphicon glyphicon-ok-sign"></i> normal</small>
-				</li>
-				<li>
-					<a href="estacao.html">Jd São Paulo</a>
-					<small class="atencao"><i class="glyphicon glyphicon-info-sign"></i> com problemas</small>
-				</li>
-				<li>
-					<a href="estacao.html">Santana</a>
-					<small class="atencao"><i class="glyphicon glyphicon-info-sign"></i> com problemas</small>
+			<p class="text-right">
+				<a href="ocorrencia.html" class="btn  btn-primary">
+					<i class="fa fa-pencil"></i> Cadastrar ocorrência
+				</a>
+			</p>
+			<h2>Ocorrências</h2>
+			<ul class="list-unstyled timeline">
+				<li class="well">
+					<p class="username"><strong>Enviado por:</strong> Laryssa Rocha</p>
+					<p class="categoria"><strong>Motivo:</strong> Velociade reduzida</p>
+					<p class="descricao"><strong>Descrição:</strong> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+					<p class="horario">em <strong>08/12/2014</strong> às <strong>11:32</strong></p>
 				</li>
 			</ul>
 		</div>
 	</main>
 	<footer>
-		<a href="#" title="Voltar" class="btn btn-default"><i class="fa fa-chevron-left"></i> Voltar</a>
+		<a href="linha.html" title="Voltar" class="pull-left btn btn-default"><i class="fa fa-chevron-left"></i> Linha 1 - Azul</a>
+		<p class="pull-right">Metrô Agora &copy; 2014</p>
 	</footer>
-	</body>
+</body>
 </html>
