@@ -26,7 +26,12 @@ namespace LF.MVC.Controllers
             
             model.StationId = stationId;
             model.Save();
-            return View(new NewOccurrenceModel(stationId));
+            return RedirectToAction("CreateSuccess", model);
+        }
+
+        public ActionResult CreateSuccess(NewOccurrenceModel model) 
+        {
+            return View(model);
         }
 
     }
