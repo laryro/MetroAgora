@@ -40,10 +40,12 @@
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Status da linha</a></li>
-						<li class="active"><a href="cadastro.html">Cadastre-se</a></li>
-						<li><a href="login.html">Login</a></li>
+						<li><a href="index.html">Status das linhas</a></li>
+						<li><a href="ocorrencia.html">Cadastrar ocorrência</a></li>
+						<li class="active"><a href="editar_senha.html">Altere sua senha</a></li>
+						<li><a href="index.html">Sair</a></li>
 					</ul>
+					
 					
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -52,19 +54,10 @@
 	<main>
 		<div class="container">
 			<h1>
-				Cadastro
-				<small>Para poder registrar ocorrências você precisa criar um usuário, preenchendo os campos abaixo</small>
+				Alterar senha
 			</h1>
 			<form action="index.html">
 				<ul class="list-unstyled">
-					<li class="form-group">
-						<label for="nome">Nome</label>
-						<input type="text" id="nome" required class="form-control">
-					</li>
-					<li class="form-group">
-						<label for="email">E-mail</label>
-						<input type="email" id="email" required class="form-control">
-					</li>
 					<li class="form-group">
 						<label for="password">Senha</label>
 						<input type="password" id="password" required class="form-control">
@@ -76,8 +69,8 @@
 				</ul>
 				<p class="text-right">
 					<button class='btn btn-primary' type="submit">
-							<i class="fa  fa-plus-circle"></i>
-						Cadastrar
+						<i class="fa  fa-edit"></i>
+						Alterar
 					</button>
 				</p>
 			</form>
